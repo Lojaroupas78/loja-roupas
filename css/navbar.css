@@ -1,19 +1,28 @@
 .container {
     margin: 50px auto;
-    justify-content: space-between;
-    align-items: center;
+    position: relative; 
+    padding-left: 72px; 
+    max-width: 1200px; 
+}
+
+.container > img {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 170px;
+    display: block;
 }
 
 .container header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center; 
     align-items: center;
+    width: 100%;
 }
 
 .container nav {
-    justify-content: center;
     display: flex;
-    margin: 0 auto;
     gap: 90px;
     text-decoration: none;
 }
